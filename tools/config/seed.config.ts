@@ -288,7 +288,8 @@ export class SeedConfig {
     packageConfigPaths: [
       `${this.APP_BASE}node_modules/*/package.json`,
       `${this.APP_BASE}node_modules/**/package.json`,
-      `${this.APP_BASE}node_modules/@angular/*/package.json`
+      `${this.APP_BASE}node_modules/@angular/*/package.json`,
+      `${this.APP_BASE}node_modules/@ngrx/*/package.json`
     ],
     paths: {
       [this.BOOTSTRAP_MODULE]: `${this.APP_BASE}${this.BOOTSTRAP_MODULE}`,
@@ -300,6 +301,8 @@ export class SeedConfig {
       '@angular/platform-browser': `${this.APP_BASE}node_modules/@angular/platform-browser/platform-browser.umd.js`,
       '@angular/platform-browser-dynamic': `${this.APP_BASE}node_modules/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js`,
       'rxjs/*': `${this.APP_BASE}node_modules/rxjs/*`,
+      '@ngrx/core': `${this.APP_BASE}node_modules/@ngrx/core/index.js`,
+      '@ngrx/store': `${this.APP_BASE}node_modules/@ngrx/store/index.js`,
       'app/*': `/app/*`,
       '*': `${this.APP_BASE}node_modules/*`
     },

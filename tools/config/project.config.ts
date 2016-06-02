@@ -13,10 +13,12 @@ export class ProjectConfig extends SeedConfig {
 
   constructor() {
     super();
-    // this.APP_TITLE = 'Put name of your app here';
+    this.APP_TITLE = 'ngrx';
     let additional_deps: InjectableDependency[] = [
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
+      { src: '@ngrx/store', inject: 'libs' },
+      { src: '@ngrx/core', inject: 'libs' }
     ];
 
     const seedDependencies = this.NPM_DEPENDENCIES;
